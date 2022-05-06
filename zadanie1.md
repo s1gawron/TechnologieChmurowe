@@ -65,4 +65,6 @@ Link do repozytorium DockerHub: https://hub.docker.com/repository/docker/sgplb/z
 
 Utworzony plik do CI dla GithubActions znajduje sie w tym repozytorium w katalogu .github
 
+Z powodu problemow z zainstalowaniem OpenJDK na architekturze arm v7 pipeline CI nie jest w stanie utworzyc obrazu na ta architekture.
+
 Link do repozytorium Github container registry: https://github.com/users/s1gawron/packages/container/package/technologiechmurowe
