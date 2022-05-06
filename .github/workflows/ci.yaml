@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Update codee
+      - name: Update code
         uses: actions/checkout@v2
 
       - name: Set up Buildx
@@ -47,6 +47,6 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
+          platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           push: true
           tags: ghcr.io/s1gawron/technologiechmurowe
