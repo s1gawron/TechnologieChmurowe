@@ -60,3 +60,9 @@ docker buildx build -t sgplb/zadanie1:1.0 --platform linux/arm/v7,linux/arm64/v8
 ``
 
 Link do repozytorium DockerHub: https://hub.docker.com/repository/docker/sgplb/zadanie1
+
+# Dodatek 1
+
+Utworzony plik do CI dla GithubActions znajduje sie w tym repozytorium w katalogu .github
+
+Link do repozytorium Github container registry: 
