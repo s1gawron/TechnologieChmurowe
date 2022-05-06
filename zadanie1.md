@@ -2,7 +2,6 @@
 
 ### Prerequisites:
 
-* Java 11
 * Maven
 * Docker
 * Buildx
@@ -53,7 +52,11 @@ Po ustawieniu na komputerze srodowiska buildkit wraz z jego wrapperem buildx, a 
 W celu zbudowania takich obrazow i wypushowania ich do repozytorium nalezy:
 
 ``
-docker buildx -t sgplb/zadanie1:1.0 --platform linux/arm/v7, linux/arm64/v8, linux/amd64 --push .
+mvn clean install
+``
+
+``
+docker buildx build -t sgplb/zadanie1:1.0 --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --push .
 ``
 
 Link do repozytorium DockerHub: https://hub.docker.com/repository/docker/sgplb/zadanie1
